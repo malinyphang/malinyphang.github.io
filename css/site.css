@@ -64,6 +64,7 @@ body {
     color: #FF1493;
     font-size: 70px;
     border: none;
+    cursor: pointer;
 }
 
 #unMuteButton {
