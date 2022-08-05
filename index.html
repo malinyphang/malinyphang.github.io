@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maliny Phang (unofficial)</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Maliny Phang">
+        <meta name="keywords" content="Maliny Phang">
+        
+        <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png" />
+        <link rel="stylesheet" href="./css/site.css" />
+        <link rel="stylesheet" href="./css/snowfall.css" />
+
+        
+    </head>
+
+<body>
+    <snowfall>
+        <snowflake><span style="color:pink;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:pink;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:#FF1493;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:#FF1493;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:pink;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:#FF69B4;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:#FF69B4;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:#FF69B4;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:pink;font-size: 14px;">❤</span></snowflake>
+        <snowflake><span style="color:pink;">❤</span></snowflake>
+        <snowflake><span style="color:#FF69B4;">❤</span></snowflake>
+        <snowflake><span style="color:#FF69B4;">❤</span></snowflake>
+        <snowflake><span style="color:#FF69B4;">❤</span></snowflake>
+        <snowflake><span style="color:pink;">❤</span></snowflake>
+        <snowflake><span style="color:pink;">❤</span></snowflake>
+        <snowflake><span style="color:pink;">❤</span></snowflake>
+        <snowflake><span style="color:#FF69B4;">♥</span></snowflake>
+        <snowflake><span style="color:#FF69B4;">♥</span></snowflake>
+        <snowflake><span style="color:#FF69B4;">♥</span></snowflake>
+        <snowflake><span style="color:#FF69B4;">♥</span></snowflake>
+        <snowflake><span style="color:pink;">♥</span></snowflake>
+        <snowflake><span style="color:pink;">♥</span></snowflake>
+        <snowflake><span style="color:pink;">♥</span></snowflake>
+        <snowflake><span style="color:#FF1493;">♥</span></snowflake>
+        <snowflake><span style="color:#FF1493;">♥</span></snowflake>
+        <snowflake><span style="color:#FF1493;">♥</span></snowflake>
+    </snowfall>
+
+    <div id="playerContainer">
+        <div id="mainPlayer" class="mainPlayer"></div>
+        <div class="player-overlay" onclick="overlayClick(event);">
+            <div id="unMuteButton" onclick="toggleMute(event);"><ion-icon name="volume-high-outline" title="Sound On"></ion-icon></div>
+        </div>
+        <div id="controllers" style="visibility: hidden;">
+            <button class="control-button" onclick="previousVideo(event);">
+                <ion-icon name="play-skip-back-circle-outline"></ion-icon>
+            </button>
+            <button class="control-button" onclick="playVideo(event);">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </button>
+            <button class="control-button" onclick="nextVideo(event);">
+                <ion-icon name="play-skip-forward-circle-outline"></ion-icon>
+            </button>
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="100" value="0" class="slider" id="playerSlider" onchange="seekVideoTo(event);">
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./js/site.js"></script>
+
+</body>
+</html>
